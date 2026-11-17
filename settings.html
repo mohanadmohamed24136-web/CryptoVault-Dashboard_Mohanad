@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoVault | Settings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="layout">
+
+        <aside class="sidebar">
+            <a class="logo" href="index.html">
+                <span class="logo-icon">CV</span>
+                <span>CryptoVault</span>
+            </a>
+
+            <p class="nav-title">MENU</p>
+
+            <nav class="navigation">
+                <a class="nav-link" href="index.html">Dashboard</a>
+                <a class="nav-link" href="#">Markets</a>
+                <a class="nav-link" href="#">Wallet</a>
+                <a class="nav-link active" href="settings.html">Settings</a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <a class="nav-link" href="login.html">Sign In</a>
+                <a class="nav-link" href="signup.html">Create Account</a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+
+            <header class="topbar">
+                <input type="search" placeholder="Search settings...">
+
+                <div class="topbar-actions">
+                    <label class="theme-switch">
+                        <input type="checkbox" id="theme-toggle">
+                        <span class="theme-slider"></span>
+                        <span>Light Mode</span>
+                    </label>
+
+                    <span class="notification">●</span>
+
+                    <div class="user-info">
+                        <span class="avatar">MN</span>
+                        <div>
+                            <strong>Mohanad Mohamed</strong>
+                            <small>Personal Account</small>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="welcome">
+                <h1>Settings</h1>
+                <p>Manage your account preferences and application settings.</p>
+            </section>
+
+            <section class="settings-card">
+
+                <nav class="settings-tabs">
+                    <a href="#profile">Profile</a>
+                    <a href="#security">Security</a>
+                    <a href="#notifications">Notifications</a>
+                    <a class="selected" href="#preferences">Preferences</a>
+                    <a href="#connected">Connected</a>
+                </nav>
+
+                <div class="settings-content" id="preferences">
+
+                    <div class="settings-heading">
+                        <div>
+                            <h2>Preferences</h2>
+                            <p>Customize how CryptoVault looks and works for you.</p>
+                        </div>
+                    </div>
+
+                    <form>
+                        <div class="form-grid">
+
+                            <div class="form-group">
+                                <label for="currency">Currency</label>
+                                <select id="currency" name="currency">
+                                    <option>USD - US Dollar</option>
+                                    <option>EUR - Euro</option>
+                                    <option>GBP - British Pound</option>
+                                    <option>EGP - Egyptian Pound</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="language">Language</label>
+                                <select id="language" name="language">
+                                    <option>English</option>
+                                    <option>Arabic</option>
+                                    <option>French</option>
+                                    <option>Spanish</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="timezone">Timezone</label>
+                                <select id="timezone" name="timezone">
+                                    <option>UTC +02:00 Cairo</option>
+                                    <option>UTC +00:00 London</option>
+                                    <option>UTC -05:00 New York</option>
+                                    <option>UTC +04:00 Dubai</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="date-format">Date Format</label>
+                                <select id="date-format" name="date-format">
+                                    <option>DD/MM/YYYY</option>
+                                    <option>MM/DD/YYYY</option>
+                                    <option>YYYY-MM-DD</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <div class="toggle-row">
+                            <div>
+                                <h3>Compact View</h3>
+                                <p>Use smaller spaces between dashboard elements.</p>
+                            </div>
+
+                            <label class="switch">
+                                <input type="checkbox" name="compact-view">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+
+                        <div class="settings-buttons">
+                            <button class="primary-button" type="button">Save Preferences</button>
+                            <button class="secondary-button" type="reset">Reset</button>
+                        </div>
+                    </form>
+
+                </div>
+            </section>
+
+            <footer class="footer">
+                © 2026 CryptoVault. All rights reserved.
+            </footer>
+
+        </main>
+    </div>
+</body>
+</html>

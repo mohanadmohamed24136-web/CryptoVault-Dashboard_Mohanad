@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoVault | Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <a class="logo" href="index.html">
+                <span class="logo-icon">CV</span>
+                <span>CryptoVault</span>
+            </a>
+
+            <p class="nav-title">MENU</p>
+
+            <nav class="navigation">
+                <a class="nav-link active" href="index.html">Dashboard</a>
+                <a class="nav-link" href="#">Markets</a>
+                <a class="nav-link" href="#">Wallet</a>
+                <a class="nav-link" href="settings.html">Settings</a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <a class="nav-link" href="login.html">Sign In</a>
+                <a class="nav-link" href="signup.html">Create Account</a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="topbar">
+                <input type="search" placeholder="Search assets...">
+
+                <div class="topbar-actions">
+                    <label class="theme-switch">
+                        <input type="checkbox" id="theme-toggle">
+                        <span class="theme-slider"></span>
+                        <span>Light Mode</span>
+                    </label>
+
+                    <span class="notification">●</span>
+
+                    <div class="user-info">
+                        <span class="avatar">MN</span>
+                        <div>
+                            <strong>Mohanad Mohamed</strong>
+                            <small>Personal Account</small>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="welcome">
+                <h1>Dashboard</h1>
+                <p>Welcome back. Here is an overview of your portfolio.</p>
+            </section>
+
+            <section class="dashboard-grid">
+
+                <article class="card balance">
+                    <div class="card-heading">
+                        <span>Total Balance</span>
+                        <span class="card-icon">$</span>
+                    </div>
+                    <h2>$24,680.50</h2>
+                    <p class="positive">+8.24% this month</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-heading">
+                        <span>Total Profit</span>
+                        <span class="card-icon">↗</span>
+                    </div>
+                    <h2>$3,240.80</h2>
+                    <p class="positive">+5.18% this month</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-heading">
+                        <span>Pending Orders</span>
+                        <span class="card-icon">◷</span>
+                    </div>
+                    <h2>12</h2>
+                    <p class="muted">4 orders need attention</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-heading">
+                        <span>Active Assets</span>
+                        <span class="card-icon">◇</span>
+                    </div>
+                    <h2>08</h2>
+                    <p class="muted">Across 4 markets</p>
+                </article>
+
+                <article class="card chart-card">
+                    <div class="section-heading">
+                        <div>
+                            <h3>Portfolio Overview</h3>
+                            <p class="muted">Your balance during the last week</p>
+                        </div>
+                        <span class="period">Last 7 days</span>
+                    </div>
+
+                    <div class="line-chart">
+                        <span class="chart-line"></span>
+                    </div>
+
+                    <div class="chart-days">
+                        <span>Mon</span>
+                        <span>Tue</span>
+                        <span>Wed</span>
+                        <span>Thu</span>
+                        <span>Fri</span>
+                        <span>Sat</span>
+                        <span>Sun</span>
+                    </div>
+                </article>
+
+                <article class="card chart-card">
+                    <div class="section-heading">
+                        <div>
+                            <h3>Asset Allocation</h3>
+                            <p class="muted">Portfolio distribution</p>
+                        </div>
+                    </div>
+
+                    <div class="allocation">
+                        <div class="donut">
+                            <span>Assets</span>
+                        </div>
+
+                        <div class="legend">
+                            <p><i class="dot btc"></i> Bitcoin <b>45%</b></p>
+                            <p><i class="dot eth"></i> Ethereum <b>30%</b></p>
+                            <p><i class="dot other"></i> Others <b>25%</b></p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card coin-card">
+                    <div class="coin-heading">
+                        <h3>Bitcoin <span class="muted">BTC / USD</span></h3>
+                        <span class="positive">+2.45%</span>
+                    </div>
+                    <h2>$67,420.80</h2>
+                    <div class="mini-chart">
+                        <span></span><span></span><span></span>
+                        <span></span><span></span><span></span>
+                        <span></span><span></span><span></span><span></span>
+                    </div>
+                </article>
+
+                <article class="card coin-card">
+                    <div class="coin-heading">
+                        <h3>Ethereum <span class="muted">ETH / USD</span></h3>
+                        <span class="positive">+1.82%</span>
+                    </div>
+                    <h2>$3,520.40</h2>
+                    <div class="mini-chart ethereum">
+                        <span></span><span></span><span></span>
+                        <span></span><span></span><span></span>
+                        <span></span><span></span><span></span><span></span>
+                    </div>
+                </article>
+
+                <article class="card extra-card">
+                    <h3>Portfolio Health</h3>
+                    <h2>Good</h2>
+                    <p class="muted">Your portfolio is performing steadily.</p>
+                    <div class="progress">
+                        <span style="width: 82%"></span>
+                    </div>
+                    <p class="muted">82% health score</p>
+                </article>
+
+                <article class="card extra-card">
+                    <h3>Risk Level</h3>
+                    <h2>Moderate</h2>
+                    <p class="muted">Your current portfolio risk level.</p>
+                    <div class="risk-level">
+                        <span></span><span></span><span></span>
+                        <span></span><span></span>
+                    </div>
+                </article>
+
+            </section>
+
+            <footer class="footer">
+                © 2026 CryptoVault. All rights reserved.
+            </footer>
+        </main>
+    </div>
+</body>
+</html>

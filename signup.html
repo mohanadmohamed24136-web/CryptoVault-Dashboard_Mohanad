@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoVault | Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="auth-page">
+
+    <div class="auth-container">
+
+        <section class="auth-side">
+            <a class="brand" href="index.html">
+                <span class="logo-icon">CV</span>
+                <h2>CryptoVault</h2>
+            </a>
+
+            <div class="auth-description">
+                <h1>Start managing your digital assets.</h1>
+                <p>Create an account and explore your cryptocurrency portfolio.</p>
+            </div>
+
+            <div class="auth-features">
+                <p>Simple portfolio management</p>
+                <p>Track your favorite assets</p>
+                <p>Organize your account</p>
+            </div>
+        </section>
+
+        <section class="auth-form-side">
+            <form class="auth-form" action="index.html" method="get">
+
+                <h1>Create Account</h1>
+                <p class="auth-subtitle">Fill in your details to get started.</p>
+
+                <div class="auth-tabs">
+                    <a href="login.html">Sign In</a>
+                    <a class="selected" href="signup.html">Sign Up</a>
+                </div>
+
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+                    <input id="fullname" name="fullname" type="text" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input id="email" name="email" type="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input id="password" name="password" type="password" placeholder="Create a password" minlength="8" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input id="confirm-password" name="confirm-password" type="password" placeholder="Confirm your password" minlength="8" required>
+                </div>
+
+                <div class="remember-row">
+                    <label>
+                        <input type="checkbox" required>
+                        I agree to the terms and conditions
+                    </label>
+                </div>
+
+                <button class="primary-button full-button" type="submit">
+                    Create Account
+                </button>
+
+                <p class="auth-bottom">
+                    Already have an account?
+                    <a href="login.html">Sign in</a>
+                </p>
+
+                <p class="auth-bottom">
+                    <a href="index.html">Back to Dashboard</a>
+                </p>
+
+            </form>
+        </section>
+
+    </div>
+
+</body>
+
+</html>
